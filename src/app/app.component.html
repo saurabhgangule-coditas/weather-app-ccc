@@ -1,0 +1,8 @@
+<div class="container">
+  <h1>Weather Forecast App</h1>
+  <label for="location">Enter Location:</label>
+  <input type="text" id="location" [(ngModel)]="location">
+  <button (click)="fetchWeatherData()">Get Weather</button>
+  <app-current-weather [weatherData]="currentWeather"></app-current-weather>
+  <app-forecast [forecastData]="forecast"></app-forecast>
+</div>
